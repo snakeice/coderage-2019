@@ -1,0 +1,57 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 558
+  ClientWidth = 350
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object EditIn: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 1
+    KeyboardType = NumberPad
+    Position.X = 15.000000000000000000
+    Position.Y = 15.000000000000000000
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object EditOut: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 0
+    KeyboardType = NumberPad
+    ReadOnly = True
+    Position.X = 15.000000000000000000
+    Position.Y = 55.000000000000000000
+    Enabled = False
+    Margins.Left = 15.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ButtonToDp: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 3
+    Text = 'To DP'
+    OnClick = ButtonToDpClick
+  end
+  object Button2: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 256.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 2
+    Text = 'To PX'
+    OnClick = Button2Click
+  end
+end
